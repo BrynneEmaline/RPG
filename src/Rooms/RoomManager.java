@@ -7,15 +7,15 @@ public class RoomManager {
     private List<Room> rooms = new ArrayList<>();
 
     public RoomManager() {
-        rooms.add(new Room("Boss description", "Boss"));
-        rooms.add(new Room("Lab description", "Lab"));
-        rooms.add(new Room("Classroom description", "Classroom"));
-        rooms.add(new Room("Cave description", "Cave"));
-        rooms.add(new Room("Start description", "Start"));
-        rooms.add(new Room("Alley description", "Alley"));
-        rooms.add(new Room("Train description", "Train"));
-        rooms.add(new Room("Harbor description", "Harbor"));
-        rooms.add(new Room("Knoll description", "Knoll"));
+        rooms.add(new Room("Boss description", "Boss", "Start"));
+        rooms.add(new Room("Lab description", "Lab", "Start"));
+        rooms.add(new Room("Classroom description", "Classroom", "Start"));
+        rooms.add(new Room("Cave description", "Cave", "Start"));
+        rooms.add(new Room("Start description", "Start", "Start"));
+        rooms.add(new Room("Alley description", "Alley", "Start"));
+        rooms.add(new Room("Train description", "Train", "Start"));
+        rooms.add(new Room("Harbor description", "Harbor", "Start"));
+        rooms.add(new Room("Knoll description", "Knoll", "Start"));
     }
 
     public List<Room> getRooms() {

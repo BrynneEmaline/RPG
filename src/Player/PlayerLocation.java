@@ -1,11 +1,13 @@
-package Rooms;
+package Player;
 
-public class Player {
+import Rooms.RoomManager;
+
+public class PlayerLocation {
     private int currentPlayerIndex;
     private RoomManager roomManager;
 
 
-    public Player(RoomManager roomManager) {
+    public PlayerLocation(RoomManager roomManager) {
         this.currentPlayerIndex = 4;
         this.roomManager = roomManager;
     }
@@ -23,7 +25,7 @@ public class Player {
     }
     public void moveLeft() {
         if (currentPlayerIndex > 0) {
-            currentPlayerIndex++;
+            currentPlayerIndex--;
         } else {
             System.out.println("There's nowhere else to go.. at least in that direction.");
         }
