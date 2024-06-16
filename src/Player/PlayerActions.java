@@ -1,8 +1,11 @@
 package Player;
 
 public class PlayerActions {
-    protected int menuChoice;
-    protected int rememberCount = 1;
+
+    private int rememberCount = 1;
+    private int dialogueCount;
+        // how could I separate each of these actions into subclasses?
+    // maybe each of these actions can be ones that have counts
 
     public void remember() {
             if (rememberCount == 1) {

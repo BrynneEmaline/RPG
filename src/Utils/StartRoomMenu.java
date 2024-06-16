@@ -28,7 +28,7 @@ public class StartRoomMenu extends Menu {
 
             switch (playerChoice) {
                 case 1:
-                    System.out.println("description of surroundings");
+                    System.out.println("description of surroundings ");
                     break;
                 case 2:
                     playerActions.remember();
@@ -42,7 +42,7 @@ public class StartRoomMenu extends Menu {
                 case 5:
                     GameState.quit();
                 default:
-                    System.out.println("Invalid choice.");
+                    System.out.println("Invalid choice ");
             }
         }
     }

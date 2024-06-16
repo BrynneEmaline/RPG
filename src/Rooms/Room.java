@@ -1,10 +1,14 @@
 package Rooms;
 
+import Npcs.Npc;
+
 public class Room {
 
     protected String roomDescription;
     protected String roomName;
     protected String roomState;
+            // only two rooms that hold items not attached to NPC's are Cave and Knoll
+    protected Npc npc;
 
 
     public Room(String roomDescription, String roomName, String roomState) {

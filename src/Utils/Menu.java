@@ -17,7 +17,6 @@ public abstract class Menu {
 
     protected final PlayerLocation playerLocation;
     protected final Scanner scanner;
-    private int playerChoice; // maybe this is a local variable instead
 
     public Menu(PlayerLocation playerLocation, Scanner scanner) {
         this.playerLocation = playerLocation;
